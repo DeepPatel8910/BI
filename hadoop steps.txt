@@ -1,0 +1,39 @@
+Password: Bunty@123
+
+1)open terminal in desktop
+
+2)hdfs namenode -format   (formatting namenode)
+
+3)start-all.sh          (starts all daemnos/services)
+
+4)Minimize terminal and Open Firefox-->localhost:9870
+
+5)go to utilities-->browse the file system      (firstly its empty)
+
+6)now again come to terminal and make directory
+hadoop fs -mkdir /deep                          (now you can see directory in hadoop)
+
+7)(create a input txt file in desktop)
+touch input.txt
+nano input.txt
+
+8)put input file in directory
+hadoop fs -put input.txt /deep/
+
+
+8)To open Intellij, go to
+downloads/ideaIU-2023.2.2/idea-IU-232.9921.47/bin     then right click and open in terminal
+
+then in terminal type ./idea.sh to open ide
+
+9)Open WordCount
+
+10)Steps to create jar file
+maven: mvn clean, mvn install
+
+11)After creating jar file goto terminal
+intellijProjects/wordcount$  hadoop jar target/wordcount-1.o-SNAPSHOT.jar org.ashutosh.RunnerClassName /input.txt /deep(output)
+
+(hadoop jar my-hadoop-job.jar com.example.MyHadoopJob /input-data /output-data)
+
+12)go to localhost for output 
