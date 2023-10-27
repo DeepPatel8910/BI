@@ -18,22 +18,22 @@ touch input.txt
 nano input.txt
 
 8)put input file in directory
-hadoop fs -put input.txt /deep/
+hadoop fs -put input.txt /deep
 
 
-8)To open Intellij, go to
+9)To open Intellij, go to
 downloads/ideaIU-2023.2.2/idea-IU-232.9921.47/bin     then right click and open in terminal
 
 then in terminal type ./idea.sh to open ide
 
-9)Open WordCount
+10)Open WordCount
 
-10)Steps to create jar file
-maven: mvn clean, mvn install
+11)Steps to create jar file
+maven-->execute maven goal: mvn clean, mvn install
 
-11)After creating jar file goto terminal
-intellijProjects/wordcount$  hadoop jar target/wordcount-1.o-SNAPSHOT.jar org.ashutosh.RunnerClassName /input.txt /deep(output)
+12)After creating jar file goto terminal
+intellijProjects/wordcount$  hadoop jar target/wordcount-1.o-SNAPSHOT.jar org.ashutosh.WC_Runner /deep /input.txt /output
 
 (hadoop jar my-hadoop-job.jar com.example.MyHadoopJob /input-data /output-data)
 
-12)go to localhost for output 
+13)go to localhost for output 
